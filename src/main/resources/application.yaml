@@ -1,0 +1,23 @@
+github:
+  client_id: 87da116e4ac1bacdffcd
+  client_secret: 4a4a7b9ca1dbc7f6b25174c1a561612b5a52fa18
+  redirect-uri: http://localhost:8080/GitHubCallback
+gitee:
+  client_id: 1b3234a7df41c37c0f0af9abe08de5b96f6d0578fcad8aed24b63321bdd70251
+  client_secret: afa88ed06b429432e4d80c8a69475d4142157e88af9363d964ba65869192d701
+  redirect_uri: http://localhost:8080/GiteeCallback
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/community?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  file:
+    name: community.log
+  level:
+    root : info
+    com.example.community.mapper : debug
